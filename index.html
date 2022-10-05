@@ -70,10 +70,12 @@
 
     <h3>All comments:</h3>
         
-    <dd>This is a very fun recipe to follow.</dd><br>
-    <dd>- Ahmed Z.</dd><br>
-    <dd>This is my favorite recipe. I enjoy it.</dd><br>
-    <dd>- Karim K.</dd><br>
+    
+    <ul>This is a very fun recipe to follow.</ul>
+    <ul>- Ahmed Z.</ul>
+    <ul>This is my favorite recipe. I enjoy it.</ul>
+    <ul>- Karim K.</ul>
+          
     
 
 
@@ -82,25 +84,29 @@
     <form action="/action_page.php" style="width:300px;">
         <fieldset>
           <legend>Personal Information</legend>
-          <label >Name:</label>
+          <label for="name">Name:</label>
           <input type="text" name="inputBox"><br><br>
-          <label >Email:</label>
+          <label for="email">Email:</label>
           <input type="email" name="inputBox" placeholder="xxxx@domain.com"><br>
         </fieldset>
       </form>
 
+      <br>
+
       <form action="/action_page.php"  style="width:300px;">
         <fieldset>
             <legend>Type of recipes</legend>
-            <label >Breakfast</label>
+            <label for="html">Breakfast</label>
             <input type="radio" id="Breakfast" name="recipy_Type">
-            <label >Lunch</label>
+            <label for="css">Lunch</label>
             <input type="radio" id="Lunch" name="recipy_Type">
-            <label >Dinner</label>
+            <label for="javascript">Dinner</label>
             <input type="radio" id="Dinner" name="recipy_Type">
         </fieldset>
       </form>
 
+      <br>
+      
       <form action="mailto:Chef@Kitchen.org" method="GET">
         <input type="submit" value="Submit" />
     </form>
